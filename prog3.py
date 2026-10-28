@@ -1,1 +1,1 @@
-x = input: 
+x = input: int
