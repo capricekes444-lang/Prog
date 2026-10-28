@@ -1,1 +1,1 @@
-input: 
+x = input: 
