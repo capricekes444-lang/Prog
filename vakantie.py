@@ -30,7 +30,8 @@ def total_costs(km: int, nights: int) -> int:
     twee functies (roep die dus hier aan).
     >>> total_costs(2, 2)
     120.26
-    >>>
+    >>> total_costs(1, 1)
+    
     """
 
 if __name__ == '__main__':
