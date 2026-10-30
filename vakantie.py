@@ -33,7 +33,7 @@ def total_costs(km: int, nights: int) -> int:
     >>> total_costs(1, 1)
     60.13
     >>> total_costs(2, 3) 
-    
+    180.13
     """
 
 if __name__ == '__main__':
