@@ -1,10 +1,19 @@
 def print_pyramid(hoogte: int) -> None:
     """
+  >>> print_pyramid(1)
+    ##
+    >>> print_pyramid(2)
+     ##
+    ###
     >>> print_pyramid(3)
       ##
      ###
     ####
-    <BLANKLINE>
+    >>> print_pyramid(4)
+       ##
+      ###
+     ####
+    #####
     """
     for i in range(1, hoogte + 1):
         for j in range(hoogte - i):
