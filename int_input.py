@@ -47,7 +47,6 @@ def get_two_different_ints() -> tuple[int, int]:
 
     return first, second
 
-
 if __name__ == '__main__':
     get_positive_int()
     get_any_int_but_0()
