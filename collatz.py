@@ -1,7 +1,5 @@
 def print_collatz(n: int) -> None:
     """
-    Print de Collatz-reeks vanaf n tot en met 1.
-
     >>> print_collatz(3)
     3
     10
@@ -13,6 +11,14 @@ def print_collatz(n: int) -> None:
     1
     """
     print(n)
+
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+
+        print(n)
 
     while n != 1:
         if n % 2 == 0:
@@ -46,3 +52,6 @@ def collatz_length(n: int) -> int:
 
         count = count + 1
     return count
+    
+    print_collatz(3)
+print(collatz_length(3))
