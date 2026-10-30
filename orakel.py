@@ -16,7 +16,6 @@ def check_answer(answer: str) -> bool:
     else:
         return False
 
-
 if __name__ == '__main__':
     answer = input(
         "Wat is het antwoord op de grote vraag van het leven, "
