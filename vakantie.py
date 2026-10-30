@@ -9,7 +9,7 @@ def travel_costs(km: int) -> float:
     >>> travel_costs(10)
     1.30
     """
-    return km * 2 * 0.13
+    return round(km * 0.13, 2)
 def overnight_costs(nights: int) -> float:
     """
     Bepaalt de overnachtingskosten op basis van het aantal nachten
