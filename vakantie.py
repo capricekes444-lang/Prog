@@ -37,6 +37,6 @@ def total_costs(km: int, nights: int) -> int:
     """
 
 if __name__ == '__main__':
-    travel = int(input("Hoeveel many km heb je gerezen?"))
+    travel = int(input("Hoeveel many kilometers heb je gerezen?"))
     <Schrijf hier code die input van de gebruiker opvraagt,
     total_costs aanroept, en print hoeveel de vakantie gaat kosten>
