@@ -14,4 +14,4 @@ if answer == "42" or answer == "tweeenveertig" or answer == "tweeënveertig":
     else return False
 
 if __name__ == '__main__':
-    
+    answer = inp
