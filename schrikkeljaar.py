@@ -18,7 +18,7 @@ def is_leap_year(year: int) -> bool:
     else:
         return False
         
-        if __name__ == '__main__':
+    if __name__ == '__main__':
         year = int(input("Geef een jaartal: "))
 
     if is_leap_year(year):
