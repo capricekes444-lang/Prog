@@ -18,5 +18,4 @@ if __name__ == '__main__':
 
     while hoogte < 1 or hoogte > 23:
         hoogte = int(input("Hoe hoog moet de piramide zijn? "))
-
     print_pyramid(hoogte)
