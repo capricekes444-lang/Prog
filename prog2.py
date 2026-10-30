@@ -1,1 +1,1 @@
-woord=input("typ iets")
+woord=input("typ iets:")
