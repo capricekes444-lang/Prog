@@ -1,12 +1,14 @@
-def is_leap_year(year: int) -> bool:
+def is_schrikkel(year: int) -> bool:
     """
-    >>> is_leap_year(2024)
+    Controleert of een jaar een schrikkeljaar is.
+
+    >>> is_schrikkel(2024)
     True
-    >>> is_leap_year(2025)
+    >>> is_schrikkel(2025)
     False
-    >>> is_leap_year(1900)
+    >>> is_schrikkel(1900)
     False
-    >>> is_leap_year(2000)
+    >>> is_schrikkel(2000)
     True
     """
     if year % 400 == 0:
@@ -18,11 +20,10 @@ def is_leap_year(year: int) -> bool:
     else:
         return False
 
-
 if __name__ == '__main__':
     year = int(input("Geef een jaartal: "))
 
-    if is_leap_year(year):
+    if is_schrikkel(year):
         print(f"{year} is een schrikkeljaar")
     else:
         print(f"{year} is geen schrikkeljaar")
