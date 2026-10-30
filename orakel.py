@@ -2,7 +2,7 @@ def check_answer(answer: str) -> bool:
     """
     >>> check_answer("tweeenveertig")
     True
-    >>> check_answer("tweeënveertig")
+    >>> check_answer("tweeÃ«nveertig")
     True
     >>> check_answer("42") 
     True
@@ -10,7 +10,7 @@ def check_answer(answer: str) -> bool:
     False
     """
    
-    if answer == "42" or answer == "tweeenveertig" or answer == "tweeënveertig":
+    if answer == "42" or answer == "tweeenveertig" or answer == "tweeÃ«nveertig":
         return True 
     else:
         return False
