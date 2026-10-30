@@ -1,2 +1,1 @@
-x = input("iets: ")
-print(x * 3)
+woord=input("typ iets")
