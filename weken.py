@@ -16,3 +16,5 @@ def weeks_elapsed(day1: int, day2: int) -> int:
     day2 = int(input("Dagnummer 2: "))
     result = ...
     print(f"Er zijn {result} volle weken verstreken.")
+    
+    
