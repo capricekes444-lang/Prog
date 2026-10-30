@@ -3,7 +3,7 @@ def print_pyramid(hoogte: int) -> None:
     Print een halve piramide van de gegeven hoogte.
     >>> print_pyramid(5)
     ##
-    ###
+   ###
   ####
  #####
 ######
