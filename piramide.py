@@ -7,6 +7,7 @@ def print_pyramid(hoogte: int) -> None:
   ####
  #####
 ######
+
     """
     for i in range(1, hoogte + 1):
 
