@@ -21,7 +21,7 @@ def overnight_costs(nights: int) -> float:
     >>> overnight_costs(10)
     600
     """
-
+    return nights 
 def total_costs(km: int, nights: int) -> int:
     """
     Bepaalt de totale kosten op basis van de afstand en het aantal
