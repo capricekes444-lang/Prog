@@ -1,6 +1,6 @@
 def print_pyramid(hoogte: int) -> None:
     """
-  >>> print_pyramid(1)
+    >>> print_pyramid(1)
     ##
     >>> print_pyramid(2)
      ##
