@@ -31,6 +31,8 @@ def total_costs(km: int, nights: int) -> int:
     >>> total_costs(2, 2)
     120.26
     >>> total_costs(1, 1)
+    60.13
+    >>> total_costs(2, 3) 
     
     """
 
