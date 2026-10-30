@@ -11,6 +11,12 @@ def is_same_rectangle(ax_length: int, ay_length: int, bx_length: int, by_length:
 def is_same_square(ax_length: int, ay_length: int, bx_length: int, by_length: int) -> TODO:
     """
     Controleert of beide rechthoeken hetzelfde vierkant zijn
+    >>> is_same_square(4, 4, 4, 4)
+    True
+    >>> is_same_square(2, 2, 3, 4)
+    False
+    >>> is_same_square(5, 5, 5, 5)
+    True
     """
 
 def calculate_length(c1: int, c2: int) -> int:
