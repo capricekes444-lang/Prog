@@ -29,7 +29,8 @@ def total_costs(km: int, nights: int) -> int:
     Deze functie delegeert zoveel mogelijk werk naar de andere
     twee functies (roep die dus hier aan).
     >>> total_costs(2, 2)
-    120.
+    120.26
+    
     """
 
 if __name__ == '__main__':
