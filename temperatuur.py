@@ -23,7 +23,7 @@ def print_table(old_type: str, begin_temp: int,
     Print een conversietabel.
 
     >>> print_table("C", 0, 10, 5)
-      C |   F
+      C |  F
       0 |  32
       5 |  41
      10 |  50
