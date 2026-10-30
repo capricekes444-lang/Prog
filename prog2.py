@@ -1,2 +1,2 @@
 woord=input("typ iets:")
-print(woord,)
+print(woord, woord, woord)
