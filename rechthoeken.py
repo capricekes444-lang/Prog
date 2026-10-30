@@ -1,17 +1,21 @@
-def is_same_rectangle(ax_length: int, ay_length: int, bx_length: int, by_length: int) -> TODO:
+def is_same_rectangle(ax_length: int, ay_length: int, bx_length: int, by_length: int) -> bool:
     """
+    Controleert of twee rechthoeken dezelfde afmetingen hebben.
+
     >>> is_same_rectangle(4, 6, 0, 4)
-    True 
+    False
     >>> is_same_rectangle(0, 0, 6, 9)
-    False 
+    False
     >>> is_same_rectangle(7, 1, 7, 1)
     True
     """
     return ax_length == bx_length and ay_length == by_length
-    
-def is_same_square(ax_length: int, ay_length: int, bx_length: int, by_length: int) -> TODO:
+
+
+def is_same_square(ax_length: int, ay_length: int, bx_length: int, by_length: int) -> bool:
     """
-    Controleert of beide rechthoeken hetzelfde vierkant zijn
+    Controleert of beide rechthoeken hetzelfde vierkant zijn.
+
     >>> is_same_square(4, 4, 4, 4)
     True
     >>> is_same_square(2, 2, 3, 4)
@@ -20,11 +24,13 @@ def is_same_square(ax_length: int, ay_length: int, bx_length: int, by_length: in
     True
     """
     return ax_length == ay_length == bx_length == by_length
-    
+
+
 def calculate_length(c1: int, c2: int) -> int:
     """
-    Berekent de lengte van een zijde op basis van twee coÃ¶rdinaten
-    >>> calculate_length(0, 7) 
+    Berekent de lengte van een zijde op basis van twee coördinaten.
+
+    >>> calculate_length(0, 7)
     7
     >>> calculate_length(2, 9)
     7
@@ -32,7 +38,8 @@ def calculate_length(c1: int, c2: int) -> int:
     12
     """
     return abs(c2 - c1)
-    
+
+
 if __name__ == '__main__':
     ax1 = int(input("Geef de x1 van A: "))
     ax2 = int(input("Geef de x2 van A: "))
