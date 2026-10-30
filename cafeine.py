@@ -12,6 +12,6 @@ if __name__ == '__main__':
     coffee = int(input("Hoeveel koffie heb je gedronken?"))
     tea = int(input("Hoeveel thee heb je gedronken? "))
     energy = int(input("Hoeveel thee heb je gedronken?"))
-    cola = int)input("Hoeveel cola heb je gedronken?"
+    cola = int(input("Hoeveel cola heb je gedronken?"))
     result = calculate_cafeine(coffee, tea, energy, cola)
     print(result)
