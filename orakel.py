@@ -1,6 +1,13 @@
 def check_answer(answer: str) -> bool:
     """
-    >>> check_answer(twee)
+    >>> check_answer(tweeenveertig)
+    True 
+    >>> check_answer(tweeënveertig)
+    True
+    >>> check_answer(42) 
+    True
+    >>> check_answer(43)
+    False
     """
 
 if __name__ == '__main__':
