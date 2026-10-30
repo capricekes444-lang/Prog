@@ -44,7 +44,6 @@ def print_table(old_type: str, begin_temp: int,
         converted = convert_temperature(old_type, temp)
         print(f"{temp:>3} | {converted:>3}")
 
-
 if __name__ == '__main__':
     old_type = input("Welke eenheid van temperatuur (C of F)? ")
 
@@ -58,5 +57,4 @@ if __name__ == '__main__':
 
     while step_size <= 0:
         step_size = int(input("Wat is de stapgrootte? "))
-
     print_table(old_type, begin_temp, end_temp, step_size)
