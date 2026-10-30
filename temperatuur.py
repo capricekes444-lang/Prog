@@ -6,8 +6,8 @@ def convert_temperature(old_type: str, old_temp: int) -> int:
     32
     >>> convert_temperature("C", 20)
     68
-    >>> convert_temperature("F", 0)
-    -17
+    >>> convert_temperature("F", 32)
+    0
     >>> convert_temperature("F", 100)
     37
     """
@@ -23,13 +23,18 @@ def print_table(old_type: str, begin_temp: int,
     Print een conversietabel.
 
     >>> print_table("C", 0, 10, 5)
-      C |  F
-      0 | 32
-      5 | 41
-     10 | 50
+      C |   F
+      0 |  32
+      5 |  41
+     10 |  50
 
-    >>> print_table("F", 100, 0, 5)
+    >>> print_table("F", 10, 0, 2)
       F |   C
+
+    >>> print_table("F", 0, 3, 3)
+      F |   C
+      0 | -17
+      3 | -16
     """
     old_type = old_type.upper()
 
@@ -44,6 +49,7 @@ def print_table(old_type: str, begin_temp: int,
         converted = convert_temperature(old_type, temp)
         print(f"{temp:>3} | {converted:>3}")
 
+
 if __name__ == '__main__':
     old_type = input("Welke eenheid van temperatuur (C of F)? ")
 
@@ -57,4 +63,5 @@ if __name__ == '__main__':
 
     while step_size <= 0:
         step_size = int(input("Wat is de stapgrootte? "))
+
     print_table(old_type, begin_temp, end_temp, step_size)
