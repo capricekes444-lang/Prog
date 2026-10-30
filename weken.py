@@ -1,4 +1,4 @@
-def weeks_elapsed(day1: int, day2: int) -> int:
+    def weeks_elapsed(day1: int, day2: int) -> int:
  """
     Berekent het aantal volle weken dat verstreken is tussen twee dagen
     in hetzelfde jaar. De dagen zijn gegeven als dagnummer (day1 en day2).
