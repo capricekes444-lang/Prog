@@ -1,5 +1,4 @@
 def is_acidic(...) -> bool:
-    <functie met docstring, voorbeelden en implementatie>
     >>> is_acidic(3.0)
     True
     >>> is_acidic(9.0)
