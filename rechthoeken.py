@@ -31,4 +31,4 @@ def calculate_length(c1: int, c2: int) -> int:
     """
 
 if __name__ == '__main__':
-    ax1 = 
+    ax1 = int(input(""))
