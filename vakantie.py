@@ -35,6 +35,7 @@ def total_costs(km: int, nights: int) -> int:
     >>> total_costs(2, 3) 
     181
     """
+    return round(transport_costs(km) + accommodation_costs(nights))
 
 if __name__ == '__main__':
     km = int(input("Hoeveel kilometers heb je gerozen?"))
