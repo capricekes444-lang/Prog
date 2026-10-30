@@ -40,5 +40,4 @@ if __name__ == '__main__':
     km = int(input("Hoeveel kilometers heb je gerozen?"))
     nights = int(input("Hoeveel nachten ben je gebleven?"))
     results = total_costs(km, nights)
-    <Schrijf hier code die input van de gebruiker opvraagt,
-    total_costs aanroept, en print hoeveel de vakantie gaat kosten>
+    print(results)
