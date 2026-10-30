@@ -42,5 +42,4 @@ def collatz_length(n: int) -> int:
 
         count = count + 1
     return count
-    
-    print_collatz(3)
+print_collatz(3)
