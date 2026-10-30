@@ -1,4 +1,4 @@
-def is_acidic(...) -> bool:
+def is_acidic(ph: float) -> bool:
     """
     >>> is_acidic(3.0)
     True
