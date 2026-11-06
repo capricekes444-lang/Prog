@@ -10,6 +10,8 @@ def hoeveelheid_water(minuten: int) -> int:
     0
     >>> hoeveelheid_water(1)
     12
+    >>> hoeveelheid_water(3)
+    36
     """
     return minuten * 12
     
