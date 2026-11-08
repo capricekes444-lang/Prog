@@ -1,5 +1,7 @@
 def compare(word1: str, word2: str) -> int:
     """
+    Vergelijkt twee woorden alfabetisch.
+
     >>> compare("Taylor", "Lana")
     1
     >>> compare("shark", "sWoRd")
@@ -11,7 +13,12 @@ def compare(word1: str, word2: str) -> int:
     >>> compare("apple", "banana")
     -1
     """
-    for i in range(min(len(word1), len(word2))):
+    lengte = len(word1)
+
+    if len(word2) < lengte:
+        lengte = len(word2)
+
+    for i in range(lengte):
         letter1 = word1[i].lower()
         letter2 = word2[i].lower()
 
