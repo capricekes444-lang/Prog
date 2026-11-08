@@ -1,8 +1,6 @@
 
 def convert(s: str) -> str:
     """
-    Zet camelCase om naar snake_case.
-
     >>> convert("check")
     'check'
     >>> convert("convertInput")
