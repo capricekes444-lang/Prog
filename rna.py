@@ -26,8 +26,6 @@ def check_input(dna: str) -> bool:
 
 def transcribe_dna_to_rna(dna: str) -> str:
     """
-    Zet DNA om naar RNA in hoofdletters.
-
     >>> transcribe_dna_to_rna("ATGC")
     'UACG'
     >>> transcribe_dna_to_rna("atGcAgtAttGCA")
