@@ -28,8 +28,6 @@ def calculate_grade(text: str) -> int:
 
 def coleman_liau(words: int, sentences: int, letters: int) -> int:
     """
-    Berekent de index volgens de Coleman-Liau-formule.
-
     >>> coleman_liau(8, 4, 29)
     1
     """
