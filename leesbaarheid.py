@@ -53,7 +53,7 @@ def calculate_grade(text: str) -> int:
 def coleman_liau(words: int, sentences: int, letters: int) -> int:
     """
     Berekent de Coleman-Liau-index.
-
+]]
     >>> coleman_liau(8, 4, 29)
     -9
     >>> coleman_liau(10, 2, 50)
