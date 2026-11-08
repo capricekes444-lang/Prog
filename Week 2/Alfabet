@@ -1,7 +1,5 @@
 def hoeveelheid_water(minuten: int) -> int:
     """
-    Berekent hoeveel flesjes water worden gebruikt.
-
     >>> hoeveelheid_water(2)
     24
     >>> hoeveelheid_water(5)
