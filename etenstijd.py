@@ -1,5 +1,8 @@
 def meal(time: str) -> str | None:
     """
+    Converteert een tijd-string naar een maaltijd.
+    De maaltijd kan zijn "ontbijt", "lunch", "avondeten".
+
     >>> meal("7:15")
     'ontbijt'
     >>> meal("08:00")
@@ -11,10 +14,10 @@ def meal(time: str) -> str | None:
     >>> meal("22:12") is None
     True
     """
-    uren, minuten = time.split(":")
+    uur_str, minuut_str = time.split(":")
 
-    uren = int(uren)
-    minuten = int(minuten)
+    uren = int(uur_str)
+    minuten = int(minuut_str)
 
     tijd = uren * 60 + minuten
 
