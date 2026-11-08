@@ -1,6 +1,8 @@
 
 def calculate_grade(text: str) -> int:
     """
+    Berekent de leesbaarheid van een tekst.
+
     >>> calculate_grade("One fish. Two fish. Red fish. Blue fish.")
     -9
     >>> calculate_grade("Hello world.")
@@ -13,27 +15,29 @@ def calculate_grade(text: str) -> int:
     letters = 0
     words = 0
     sentences = 0
-    in_word = False
 
-    for char in text:
+    for i in range(len(text)):
+        char = text[i]
+
         if char.isalpha():
             letters += 1
 
-        if char.isalnum():
-            if not in_word:
-                words += 1
-                in_word = True
-        else:
-            in_word = False
+        if char == " ":
+            words += 1
 
         if char in ".!?":
             sentences += 1
+
+    if len(text) > 0:
+        words += 1
 
     return coleman_liau(words, sentences, letters)
 
 
 def coleman_liau(words: int, sentences: int, letters: int) -> int:
     """
+    Berekent de Coleman-Liau-index.
+
     >>> coleman_liau(8, 4, 29)
     -9
     >>> coleman_liau(10, 2, 50)
