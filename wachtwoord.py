@@ -44,8 +44,6 @@ def check_number(password: str) -> bool:
 
 def check_password(password: str) -> bool:
     """
-    Controleer of aan alle drie de eisen is voldaan.
-
     >>> check_password("AardappelTester123")
     True
     >>> check_password("hoi")
