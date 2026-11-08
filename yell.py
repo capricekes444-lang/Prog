@@ -1,4 +1,3 @@
-
 def yell(s: str) -> str:
     """
     >>> yell("Hello!")
