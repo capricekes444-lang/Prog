@@ -1,9 +1,6 @@
 
 def calculate_grade(text: str) -> int:
     """
-    Bepaalt aantal letters, woorden en zinnen van de tekst,
-    en roept coleman_liau aan om grade te berekenen.
-
     >>> calculate_grade("One fish. Two fish. Red fish. Blue fish.")
     1
     """
