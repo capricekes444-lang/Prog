@@ -20,3 +20,7 @@ def yell(s: str) -> str:
             result += char
 
     return result
+    
+if __name__ == "__main__":
+    tekst = input()
+    print(yell(tekst))
