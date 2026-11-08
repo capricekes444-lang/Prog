@@ -1,8 +1,6 @@
 
 def calculate_grade(text: str) -> int:
     """
-    Berekent de leesbaarheid van een tekst.
-
     >>> calculate_grade("One fish. Two fish. Red fish. Blue fish.")
     -9
     >>> calculate_grade("Hello world.")
