@@ -1,8 +1,6 @@
 
 def yell(s: str) -> str:
     """
-    Verdubbelt alle uitroeptekens en vraagtekens.
-
     >>> yell("Hello!")
     'Hello!!'
     >>> yell("How are you?")
