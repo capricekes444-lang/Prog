@@ -1,7 +1,15 @@
 
 def calculate_grade(text: str) -> int:
     """
+    Bepaalt het aantal letters, woorden en zinnen.
+
     >>> calculate_grade("One fish. Two fish. Red fish. Blue fish.")
+    1
+    >>> calculate_grade("Hello world.")
+    2
+    >>> calculate_grade("Hello.")
+    1
+    >>> calculate_grade("Hi.")
     1
     """
     letters = 0
@@ -28,8 +36,16 @@ def calculate_grade(text: str) -> int:
 
 def coleman_liau(words: int, sentences: int, letters: int) -> int:
     """
+    Berekent de Coleman-Liau-index.
+
     >>> coleman_liau(8, 4, 29)
     1
+    >>> coleman_liau(10, 2, 50)
+    8
+    >>> coleman_liau(5, 1, 20)
+    2
+    >>> coleman_liau(0, 0, 0)
+    0
     """
     if words == 0:
         return 0
