@@ -1,7 +1,5 @@
 def compare(word1: str, word2: str) -> int:
     """
-    Vergelijkt twee woorden alfabetisch.
-
     >>> compare("Taylor", "Lana")
     1
     >>> compare("shark", "sWoRd")
