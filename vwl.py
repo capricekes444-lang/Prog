@@ -1,8 +1,5 @@
-
 def remove_vowels(s: str) -> str:
     """
-    Verwijdert alle klinkers uit een string.
-
     >>> remove_vowels("hello")
     'hll'
     >>> remove_vowels("apple")
