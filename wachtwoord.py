@@ -30,8 +30,6 @@ def check_letter(password: str) -> bool:
 
 def check_number(password: str) -> bool:
     """
-    Controleer of het wachtwoord een cijfer bevat.
-
     >>> check_number("Hallo123")
     True
     >>> check_number("Hallo")
