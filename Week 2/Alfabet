@@ -1,20 +1,45 @@
-def hoeveelheid_water(minuten: int) -> int:
+def compare(word1: str, word2: str) -> int:
     """
-    >>> hoeveelheid_water(2)
-    24
-    >>> hoeveelheid_water(5)
-    60
-    >>> hoeveelheid_water(4)
-    48
-    >>> hoeveelheid_water(1)
-    12
-    >>> hoeveelheid_water(3)
-    36
+    Vergelijkt twee woorden alfabetisch, zonder onderscheid
+    tussen hoofdletters en kleine letters.
+
+    >>> compare("Taylor", "Lana")
+    1
+    >>> compare("shark", "sWoRd")
+    -1
+    >>> compare("Daantje", "Daan")
+    1
+    >>> compare("amanda", "Amanda")
+    0
+    >>> compare("apple", "banana")
+    -1
     """
-    return minuten * 12
+    for i in range(min(len(word1), len(word2))):
+        letter1 = word1[i].lower()
+        letter2 = word2[i].lower()
+
+        if letter1 < letter2:
+            return -1
+        elif letter1 > letter2:
+            return 1
+
+    if len(word1) < len(word2):
+        return -1
+    elif len(word1) > len(word2):
+        return 1
+    else:
+        return 0
 
 
 if __name__ == "__main__":
-    return "Hoeveel minuten douche je?"
-    minuten = int(input())
-    return hoeveelheid_water(minuten)
+    word1 = input("Woord 1: ")
+    word2 = input("Woord 2: ")
+
+    result = compare(word1, word2)
+
+    if result == -1:
+        print(word1 + " first")
+    elif result == 1:
+        print(word2 + " first")
+    else:
+        print("No need to decide!")
