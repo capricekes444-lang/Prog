@@ -1,8 +1,6 @@
 
 def shout(s: str) -> str:
     """
-    Zet alle letters om naar hoofdletters.
-
     >>> shout("hello")
     'HELLO'
     >>> shout("Hello World!")
