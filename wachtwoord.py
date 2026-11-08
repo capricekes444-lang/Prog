@@ -11,8 +11,6 @@ def check_length(password: str) -> bool:
 
 def check_letter(password: str) -> bool:
     """
-    Controleer of het wachtwoord een hoofdletter en kleine letter bevat.
-
     >>> check_letter("Hallo")
     True
     >>> check_letter("hallo")
