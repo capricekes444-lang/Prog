@@ -1,8 +1,6 @@
 
 def check_input(dna: str) -> bool:
     """
-    Controleert of de DNA-string geldig is.
-
     >>> check_input("ATGC")
     True
     >>> check_input("atGcA")
