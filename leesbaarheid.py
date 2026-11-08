@@ -1,8 +1,6 @@
 
 def calculate_grade(text: str) -> int:
     """
-    Bepaalt het aantal letters, woorden en zinnen.
-
     >>> calculate_grade("One fish. Two fish. Red fish. Blue fish.")
     1
     >>> calculate_grade("Hello world.")
