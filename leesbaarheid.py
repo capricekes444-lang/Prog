@@ -1,0 +1,59 @@
+
+def calculate_grade(text: str) -> int:
+    """
+    Bepaalt aantal letters, woorden en zinnen van de tekst,
+    en roept coleman_liau aan om grade te berekenen.
+
+    >>> calculate_grade("One fish. Two fish. Red fish. Blue fish.")
+    1
+    """
+    letters = 0
+    words = 0
+    sentences = 0
+    in_word = False
+
+    for char in text:
+        if char.isalpha():
+            letters += 1
+
+        if char.isalnum():
+            if not in_word:
+                words += 1
+                in_word = True
+        else:
+            in_word = False
+
+        if char in ".!?":
+            sentences += 1
+
+    return coleman_liau(words, sentences, letters)
+
+
+def coleman_liau(words: int, sentences: int, letters: int) -> int:
+    """
+    Berekent de index volgens de Coleman-Liau-formule.
+
+    >>> coleman_liau(8, 4, 29)
+    1
+    """
+    if words == 0:
+        return 0
+
+    L = letters / words * 100
+    S = sentences / words * 100
+
+    index = 0.0588 * L - 0.296 * S - 15.8
+
+    return round(index)
+
+
+if __name__ == "__main__":
+    text = input("Text: ")
+    grade = calculate_grade(text)
+
+    if grade < 1:
+        print("Below Grade 1")
+    elif grade >= 16:
+        print("Grade 16+")
+    else:
+        print("Grade", grade)
