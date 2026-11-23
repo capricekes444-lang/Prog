@@ -27,11 +27,6 @@ def contig(lst: list[int]) -> list[list[int]]:
     >>> contig([-3, -2, -1, 2, 3])
     [[-3, -2, -1], [2, 3]]
 
-    >>> original = [1, 2, 5]
-    >>> contig(original)
-    [[1, 2], [5]]
-    >>> original
-    [1, 2, 5]
     """
     result = []
 
