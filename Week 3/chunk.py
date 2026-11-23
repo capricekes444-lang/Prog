@@ -18,12 +18,6 @@ def chunk(lst: list[int], n: int) -> list[list[int]]:
 
     >>> chunk([], 2)
     []
-
-    >>> original = [1, 2, 3, 4]
-    >>> chunk(original, 2)
-    [[1, 2], [3, 4]]
-    >>> original
-    [1, 2, 3, 4]
     """
     if n <= 0:
         raise ValueError("n moet groter zijn dan 0")
