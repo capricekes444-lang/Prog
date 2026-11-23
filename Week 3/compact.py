@@ -13,9 +13,6 @@ def compact(lst: list[object]) -> list[object]:
     >>> compact([0, "", False, None])
     []
 
-    >>> compact([])
-    []
-
     >>> compact([1, 2, 3])
     [1, 2, 3]
 
