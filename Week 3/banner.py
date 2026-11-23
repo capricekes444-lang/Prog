@@ -1,4 +1,5 @@
 hints 
 
 i t 
-ioth
+i th
+li
