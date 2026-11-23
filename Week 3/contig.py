@@ -28,7 +28,7 @@ def contig(lst: list[int]) -> list[list[int]]:
     [[-3, -2, -1], [2, 3]]
 
     """
-    result: list[int]] = []
+    result: list[list[int]] = []
 
     if len(lst) == 0:
         return result
