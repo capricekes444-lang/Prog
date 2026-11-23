@@ -1,9 +1,6 @@
 
 def uniq(lst: list[object]) -> list[object]:
     """
-    Geeft een nieuwe lijst terug zonder dubbele elementen.
-    De originele lijst blijft onveranderd.
-
     >>> uniq([1, 2, 2, 3, 1])
     [1, 2, 3]
 
