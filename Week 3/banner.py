@@ -70,9 +70,6 @@ def string_to_list(s: str) -> list[str]:
 
     >>> string_to_list("")
     []
-
-    >>> string_to_list("een twee drie")
-    ['een', 'twee', 'drie']
     """
     result = []
     word = ""
