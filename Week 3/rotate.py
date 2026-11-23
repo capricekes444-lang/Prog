@@ -16,9 +16,9 @@ def rotate(lst: list[object]) -> None:
     >>> n3
     [7]
 
-    >>> n5 = ["a", "b", "c"]
-    >>> rotate(n5)
-    >>> n5
+    >>> n4 = ["a", "b", "c"]
+    >>> rotate(n4)
+    >>> n4
     ['b', 'c', 'a']
 
     >>> n6 = [1, 1, 2, 2]
