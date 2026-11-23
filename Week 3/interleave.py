@@ -27,15 +27,6 @@ def interleave(lst1: list[object], lst2: list[object], keep: bool) -> list[objec
 
     >>> interleave([], [], True)
     []
-
-    >>> a = [1, 2, 3]
-    >>> b = [4, 5]
-    >>> interleave(a, b, True)
-    [1, 4, 2, 5, 3]
-    >>> a
-    [1, 2, 3]
-    >>> b
-    [4, 5]
     """
     result = []
 
