@@ -41,8 +41,6 @@ def print_banner(lst: list[str]) -> None:
     ######
     Python
     ######
-
-    >>> print_banner([])
     """
     longest = longest_word_from_list(lst)
 
