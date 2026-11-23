@@ -1,9 +1,6 @@
 
 def chunk(lst: list[int], n: int) -> list[list[int]]:
     """
-    Verdeelt een lijst in kleinere lijsten van n elementen.
-    De originele lijst blijft onveranderd.
-
     >>> chunk([1, 2, 3, 4, 5, 6], 2)
     [[1, 2], [3, 4], [5, 6]]
 
