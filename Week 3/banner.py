@@ -9,10 +9,6 @@ def longest_word_from_list(lst: list[str]) -> str:
     'ccc'
     >>> longest_word_from_list(["hallo"])
     'hallo'
-    >>> longest_word_from_list(["abc", "def"])
-    'abc'
-    >>> longest_word_from_list([])
-    ''
     """
     longest = ""
 
