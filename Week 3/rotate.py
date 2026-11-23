@@ -21,9 +21,9 @@ def rotate(lst: list[object]) -> None:
     >>> n4
     ['b', 'c', 'a']
 
-    >>> n6 = [1, 1, 2, 2]
-    >>> rotate(n6)
-    >>> n6
+    >>> n5 = [1, 1, 2, 2]
+    >>> rotate(n5)
+    >>> n5
     [1, 2, 2, 1]
     """
     if len(lst) <= 1:
