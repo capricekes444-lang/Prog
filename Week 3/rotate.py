@@ -1,8 +1,6 @@
 
 def rotate(lst: list[object]) -> None:
-    """
-    Schuift alle elementen één plek naar links.
-    Het eerste element komt achteraan.
+    ""
 
     >>> n1 = [1, 2, 3]
     >>> rotate(n1)
