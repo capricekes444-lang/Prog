@@ -28,7 +28,7 @@ def rotate(lst: list[object]) -> None:
     """
     if len(lst) <= 1:
         return
-
+    
     first = lst[0]
 
     for i in range(len(lst) - 1):
