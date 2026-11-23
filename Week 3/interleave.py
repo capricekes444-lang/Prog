@@ -1,8 +1,6 @@
 
 def interleave(lst1: list[object], lst2: list[object], keep: bool) -> list[object]:
     """
-    Voegt elementen van twee lijsten afwisselend samen.
-
     >>> interleave([1, 2, 3], [4, 5, 6], True)
     [1, 4, 2, 5, 3, 6]
 
