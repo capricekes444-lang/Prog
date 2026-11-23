@@ -1,9 +1,6 @@
 
 def compact(lst: list[object]) -> list[object]:
     """
-    Maakt een nieuwe lijst zonder falsy elementen.
-    De originele lijst blijft onveranderd.
-
     >>> compact([1, 0, 2, 0, 3])
     [1, 2, 3]
 
