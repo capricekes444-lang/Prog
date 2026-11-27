@@ -61,7 +61,7 @@ if __name__ == '__main__':
     score2 = compute_score(word2)
 
     if score1 > score2:
-        print("Speler 1 wint!")
+        print("Speler 1 wint!") 
     elif score2 > score1:
         print("Speler 2 wint!")
     else:
